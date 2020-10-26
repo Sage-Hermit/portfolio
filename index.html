@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Okunrounmu Peter | Portfolio Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+        
+    </head>
+    <body>
+        <!--<div class="loading" style="opacity: 0; visibility: hidden; transform: translate(-50%, -50%) translate(0px, -100%);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="439" height="372" viewBox="0 0 439 372" class="rc">
+                <text id="rc" transform="translate(0 298)" font-size="308" font-family="Inter-ExtraBold, Inter" font-weight="700">
+                    <tspan class="rc" x="0" y="0">op.</tspan>
+                </text>
+            </svg>
+        </div>-->
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class='bx bx-menu' aria-hidden="true"></i>
+                </label>
+               <label class="logo">op.</label>
+
+               <ul>
+                   <li style="display:none;"><a class="active" href="#home">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#skills">Skills</a></li>
+                   <li><a href="#project">Projects</a></li>
+                   <li><a href="#contactme" class="contact">Contact</a></li>
+               </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="intro" id="home">
+                <h1 class="manifesto animate__animated animate__backInLeft animate__slow">Hello World! <br>
+                    I'm a self-taught Front End Developer, school-taught Systems Engineer, and a life-taught Problem Solver
+                </h1>
+
+                <img src="img/logo.svg" alt="" class="picture animate__animated animate__backInRight animate__delay-2s">
+                
+            </section>
+            <section class="about" id="about">
+                <h2>About me</h2>
+                <div class="image-tag">
+                    <div class="image">
+                        <img src="img/DSCN0014.JPG" alt="picture of Okunrounmu Peter standing" class="wow rotateInDownLeft" data-wow-delay="1s">
+                        <h3 class="spin-text"></h3>
+                    </div>
+                </div>
+                
+                <p class="info wow lightSpeedInRight"> I am a Systems Engineering student of <a href="#">University of Lagos</a> who believes accessibility and great user experience is key in web development. I solve problems that make people smile and get paid for it, everyone is HAPPY. I make websites that work across all devices and accessible to all.<br> 
+                When i'm not writing codes, I like to read books, watch slice-of-life anime and crime thrillers, write poems, and hang around the internet. <span class="typewriter"> I design FREE websites (FAST, RESPONSIVE, ELEGANT, EFFICIENT)</span>
+                </p>
+                
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>My Skills</h2>
+                <div class="container">
+                    <img src="img/html5.svg" alt="Html5 logo" class="work__img">
+                    <img src="img/css3.svg" alt="css3 logo" class="work__img">
+                    <img src="img/javascript.svg" alt="javascript logo" class="work__img">
+                    <img src="img/sass.svg" alt="sass logo" class="work__img">
+                    <img src="img/bootstrap.svg" alt="bootstrap logo" class="work__img">
+                    <img src="img/git-icon.svg" alt="git logo" class="work__img">
+                    <img src="img/angular.svg" alt="angular logo" class="work__img">
+                    <img src="img/wordpress.svg" alt="wordpress logo" class="work__img">
+                </div>
+            </section>
+
+            <section class="projects" id="project">
+                <h2>Projects i've worked on</h2>
+
+                <div class="project-container">
+                    <a href="https://cumulus-app1.web.app" target="_blank" class="project project-tile">
+                        <img class="project-image" src="img/cummulus.png" alt="project" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            Weather App
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+
+                    <a href="https://codepen.io/sage-hermit/project/full/AwnJVw" target="_blank" class="project project-tile">
+                        <img class="project-image" src="img/Todolist.png" alt="project" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            Todo list
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+
+                    <a href="https://cumulus-app1.web.app" target="_blank" class="project project-tile">
+                        <img class="project-image" src="img/quiz.png" alt="project" />
+                        <p class="project-title">
+                            <span class="code">&lt;</span>
+                            Quiz App
+                            <span class="code">&#47;&gt;</span>
+                        </p>
+                    </a>
+                </div>
+
+            </section>
+            <section id="contactme">
+                <h2>Contact me</h2>
+                <div class="contactme">
+                    <form  action="action.php" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="action" value="submit">
+                        <input name="name" type="text" value="" size="30" placeholder="Your name" class="contact__input"/><br>
+                        <input name="email" type="text" value="" size="30" placeholder="Enter your email..." class="contact__input"/><br>
+                        <textarea name="message" rows="7" cols="30" placeholder="Your message" class="contact__input" ></textarea><br>
+                        <input type="submit" value="SEND" class="contact__button"/>
+                    </form>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+
+            <div class="social-icons flex row">
+                <a href="https://www.linkedin.com/in/peter-okunrounmu-g/" class="social-icon">
+                    <div class="flex icon" id="icon-1">
+                        <i class='bx bxl-linkedin fx' style="color: #2867b2;"></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/kage-dev" class="social-icon">
+                    <div class="flex icon" id="icon-2">
+                        <i class='bx bxl-twitter fx'style="color: #00acee;" ></i>
+                    </div>
+                </a>
+                <a href="mailto:gerald.direxx@gmail.com" class="social-icon">
+                    <div class="flex icon" id="icon-3">
+                        <i class='bx bxl-google-plus-circle fx' style='color:#DB4437'></i>
+                    </div>
+                </a>
+                <a href="https://github.com/sage-hermit" class="social-icon">
+                    <div class="flex icon" id="icon-4">
+                        <i class='bx bxl-github fx'style='color:#000' ></i>
+                    </div>
+                </a>
+                <a href="http://t.me/sage_hermit" class="social-icon">
+                    <div class="flex icon" id="icon-5">
+                        <i class='bx bxl-telegram fx' style='color:#0088cc'></i>
+                    </div>
+                </a>
+                <a href="tel:2348140383508" class="social-icon">
+                    <div class="flex icon" id="icon-6">
+                        <i class='bx bxs-phone fx' style="color: #0F9D58;"></i>
+                    </div>
+                </a>
+            </div>
+            <p class="foot-note">OKUNROUNMU PETER<span class="date"> &#169; 2020</span></p>
+        </footer>
+        <script src="js/app.js"></script> 
+    </body>
+</html>
