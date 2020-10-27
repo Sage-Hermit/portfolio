@@ -136,7 +136,7 @@ h2 {
     content:"";
     animation: spin 10s linear infinite;
     -webkit-animation: spin 10s linear infinite;
-    -moz-animation: spin 10s linear infinite;
+    -moz-animation: spin 15s linear infinite;
 }
 @keyframes spin {
     0% {content: "Who's this guy?";}
@@ -472,6 +472,9 @@ footer .social-icons .icon:hover .bx {
     }
     .projects, .project-container {
         padding: 0;
+    }
+    h2:nth-child(3){
+        text-decoration: none;
     }
 }
 @media screen and(max-width: 320px) {
