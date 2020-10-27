@@ -194,7 +194,7 @@ h2 {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
@@ -248,7 +248,7 @@ h2 {
 }
 
 .contactme form {
-    width: 360px;
+    width: 22.5em;
     margin: auto;
 }
 
@@ -405,7 +405,6 @@ footer .social-icons .icon:hover .bx {
         left: 0;
       }
       #home {
-          height: 100vh;
           text-align: center;
       }
       .manifesto {
@@ -417,6 +416,7 @@ footer .social-icons .icon:hover .bx {
       .picture {
           position: relative;
           margin: 0 auto;
+          right: 0;
       }
       .image {
           float: none;
@@ -433,12 +433,14 @@ footer .social-icons .icon:hover .bx {
       .about {
           padding-bottom: 2em;
       }
+      .contactme form {
+          width:  20em;
+      }
       .typewriter {
           white-space: normal;
       }
       .skills {
           clear: none;
-
       }
       .container > img {
           width: 40%;
@@ -454,10 +456,13 @@ footer .social-icons .icon:hover .bx {
       footer .social-icons .icon {
           margin: 0 .5rem;
       }
+      .social-icon {
+          margin: 5px;
+      }
 }
 
 @media screen and(max-width: 768px)  {
-    .picture {
+    .intro > img {
         display: none;
     }
 
@@ -465,10 +470,20 @@ footer .social-icons .icon:hover .bx {
         height: 240px;
         width: 240px;
     }
+    .projects, .project-container {
+        padding: 0;
+    }
 }
 @media screen and(max-width: 320px) {
     .image > img {
         height: 200px;
         width: 200px;
+    }
+
+    .flex {
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        
     }
 }
