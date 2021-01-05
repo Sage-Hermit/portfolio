@@ -152,7 +152,7 @@ h2 {
 
 .typewriter {
     overflow: hidden;
-    white-space: nowrap;
+    white-space: normal;
     margin: 0 auto;
     letter-spacing: .10em;
 }
